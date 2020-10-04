@@ -1,4 +1,4 @@
-"""disquaire_project_django URL Configuration
+"""disquaire_project_django1 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -18,9 +18,13 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls import include, url
 
+from store import views
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^$', views.index),
+    url(r'^store/', include('store.urls')),
+    url(r'^admin/', admin.site.urls),
 ]
 
 if settings.DEBUG:

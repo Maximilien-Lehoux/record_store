@@ -44,3 +44,24 @@
 
 # Création d'une nouvelle application django :
 # django-admin startapp store (cmd)
+# Déclarer l'app dans settings-installed_app : 'store.apps.StoreConfig,'
+
+# Ajouter un dossier templates dans l'app store
+# Ajouter un dossier du nom de l'app (store) dans le dossier templates
+
+# séparer les url de l'application avec les url du projet
+# urls.py qui gère les route de l'application
+# et url.py pour toutes les applications
+# crééer urls.py dans store
+# Modifier les urls du projet :
+# rajouter url(r'^store/', include('store.urls')), dans url patterns (expression régulière)
+
+# Ajouter dans les url de l'app store :
+# from django.conf.urls import url  # importer les urls du projet
+# from . import views  # import views so we can use them in urls.
+# urls qui commencent ou termine par une chaine vide est relié à la vue index
+# urlpatterns = [
+#url(r'^$', views.index),  # "/store" will call the method "index" in "views.py"
+
+# page accueil, appeler la vue index :
+# modifier url du projet pour appeler la vue index
