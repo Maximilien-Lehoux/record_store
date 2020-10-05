@@ -9,7 +9,6 @@ ARTISTS = {
   'maria-dolores-pradera': {'name': 'María Dolores Pradera'},
 }
 
-
 ALBUMS = [
   {'name': 'Sarbacane', 'artists': [ARTISTS['francis-cabrel']]},
   {'name': 'La Dalle', 'artists': [ARTISTS['lej']]},
